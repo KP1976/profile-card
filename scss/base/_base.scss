@@ -6,9 +6,9 @@ body {
 
 body {
   align-items: center;
-  // background-color: $very-light-gray;
-  // font-family: $font-main;
-  // font-size: 15px;
+  background-color: $dark-cyan;
+  font-family: $font-name;
+  font-size: $font-size-18;
   @include flex-column();
   min-height: 100dvh;
   justify-content: flex-start;
@@ -19,6 +19,6 @@ main {
   @include flex-column();
   flex: 1 1 auto;
   justify-content: center;
-  // padding: $space-24;
+  padding: $space-24;
   width: 100%;
 }
