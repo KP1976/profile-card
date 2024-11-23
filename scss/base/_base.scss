@@ -11,38 +11,33 @@ body {
   font-size: $font-size-18;
   @include flex-column();
   min-height: 100dvh;
-  overflow: hidden;
   justify-content: flex-start;
 }
 
 .bg-image {
   display: inline;
-  position: absolute;
+  position: fixed;
   height: initial;
   max-width: none;
   width: initial;
 
   &--top {
-    top: -10%;
-    left: -50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    top: -400px;
+    left: calc(45vw - 630px);
   }
 
   &--bottom {
-    bottom: -5%;
-    right: -55%;
-    transform: translate(55%, 50%);
-    z-index: -1;
+    bottom: -330px;
+    right: calc(45vw - 650px);
   }
 }
 
 main {
   align-items: center;
+  background-color: $dark-cyan;
   @include flex-column();
   flex: 1 1 auto;
   justify-content: center;
-  overflow: hidden;
   padding: $space-24;
   width: 100%;
 }

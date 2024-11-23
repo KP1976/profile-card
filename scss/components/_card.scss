@@ -1,0 +1,12 @@
+.card {
+  align-items: center;
+  background-color: $white;
+  border-radius: $border-radius-16;
+  box-shadow: 0px 1rem 20px rgba(0, 0, 0, 0.2);
+  @include flex-column();
+  z-index: 0;
+
+  &__image {
+    border-radius: $border-radius-16 $border-radius-16 0 0;
+  }
+}
