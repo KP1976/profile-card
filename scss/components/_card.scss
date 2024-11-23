@@ -4,9 +4,9 @@
   border-radius: $border-radius-16;
   box-shadow: 0px 1rem 20px rgba(0, 0, 0, 0.2);
   @include flex-column();
+  max-width: 21.875rem;
   padding-top: calc($space-92 - 5px);
   position: relative;
-  max-width: 21.875rem;
   width: 100%;
   z-index: 0;
 
@@ -19,5 +19,27 @@
   &__avatar {
     border-radius: 50%;
     border: 5px solid $white;
+  }
+
+  &__info {
+    align-items: center;
+    @include flex-column($space-8);
+  }
+
+  &__name {
+    color: $very-dark-desaturated-blue;
+    display: flex;
+    font-weight: 700;
+    gap: $space-8;
+  }
+
+  &__age {
+    color: $dark-grayish-blue;
+    font-weight: 400;
+  }
+
+  &__location {
+    color: $dark-grayish-blue;
+    font-size: $font-size-14;
   }
 }
