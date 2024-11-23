@@ -181,7 +181,7 @@ main {
 
 .card {
   align-items: center;
-  background: url("../assets/images/bg-pattern-card.svg") no-repeat hsl(0, 0%, 100%);
+  background: url("./assets/images/bg-pattern-card.svg") no-repeat hsl(0, 0%, 100%);
   border-radius: 1rem;
   box-shadow: 0px 1rem 20px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -204,8 +204,14 @@ main {
   z-index: 0;
 }
 .card__avatar {
+  aspect-ratio: 1/1;
   border-radius: 50%;
   border: 5px solid hsl(0, 0%, 100%);
+  display: block;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6rem;
 }
 .card__info {
   align-items: center;
