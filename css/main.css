@@ -248,3 +248,15 @@ main {
   font-size: 0.625rem;
   letter-spacing: 1.5px;
 }
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  z-index: 0;
+}
+.attribution__link {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
