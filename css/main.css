@@ -1,4 +1,6 @@
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
   all: unset;
   display: revert;
 }
@@ -51,7 +53,7 @@ table {
 input,
 textarea {
   -moz-user-select: auto;
-       user-select: auto;
+  user-select: auto;
   -webkit-user-select: auto;
 }
 
@@ -64,7 +66,7 @@ textarea {
 meter {
   -webkit-appearance: revert;
   -moz-appearance: revert;
-       appearance: revert;
+  appearance: revert;
 }
 
 /* preformatted text - use only for this feature */
@@ -90,19 +92,19 @@ display:revert; revert to element instead of attribute */
 /* revert for bug in Chromium browsers
 - fix for the content editable attribute will work properly.
 - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable=false])) {
+:where([contenteditable]:not([contenteditable="false"])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   line-break: after-white-space;
   -webkit-line-break: after-white-space;
   -moz-user-select: auto;
-       user-select: auto;
+  user-select: auto;
   -webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable=true]) {
+:where([draggable="true"]) {
   -webkit-user-drag: element;
 }
 
@@ -123,7 +125,7 @@ display:revert; revert to element instead of attribute */
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/kumbh-sans-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/kumbh-sans-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* kumbh-sans-700 - latin */
 @font-face {
@@ -131,7 +133,7 @@ display:revert; revert to element instead of attribute */
   font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../../assets/fonts/kumbh-sans-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/kumbh-sans-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 html,
 body {
@@ -181,7 +183,8 @@ main {
 
 .card {
   align-items: center;
-  background: url("../../assets/images/bg-pattern-card.svg") no-repeat hsl(0, 0%, 100%);
+  background: url("../assets/images/bg-pattern-card.svg") no-repeat
+    hsl(0, 0%, 100%);
   border-radius: 1rem;
   box-shadow: 0px 1rem 20px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -210,7 +213,7 @@ main {
   display: block;
   height: 6rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 6rem;
 }
 .card__info {
